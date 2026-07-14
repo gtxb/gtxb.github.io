@@ -9,17 +9,43 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
   <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<html lang="{{ page.lingual | slice: 0,2 | default: "en" }}" class="no-js">
+
+  <!-- 当前页面使用的语言 -->
+  {% assign lingual = page.lingual %}
+
+  <!-- 当前页面相同内容不同语言版本的页面 -->
+  {% assign current_page = site.pages | concat: site.posts | where: "ref_id", page.ref_id %}
+
+  {% assign zh_page = current_page | where: "lingual", "zh" %}
+  {% if zh_page[0] %}
+     {% assign zh_url = zh_page[0].url %}
+  {% else %}
+     {% assign zh_url = "/404.html" %}
+  {% endif %}
+
+  {% assign en_page = current_page | where: "lingual", "en" %}
+  {% if en_page[0] %}
+     {% assign en_url = en_page[0].url %}
+  {% else %}
+     {% assign en_url = "/404.html" %}
+  {% endif %}
+
   <head>
     {% include head.html %}
     {% include head/custom.html %}
     <!-- 需要固定域名或localhost才能显示logo -->
     <script src="https://kit.fontawesome.com/31de87281f.js" crossorigin="anonymous"></script>
+
+    <!-- highlight the current language -->
+    <style>
+      a.highlight_lingual { color:#00adb5; font-weight:bold; }
+    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+    {% include_cached masthead.html lingual = lingual zh_url = zh_url en_url = en_url %}
 
     <div class="initial-content">
       {{ content }}
@@ -34,7 +60,7 @@
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
-        {% include_cached footer.html %}
+        {% include_cached footer.html lingual = lingual %}
       </footer>
     </div>
 

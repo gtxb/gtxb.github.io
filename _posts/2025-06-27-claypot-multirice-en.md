@@ -1,10 +1,13 @@
 ---
 title: "Multigrain rice"
+lingual: en
+ref_id: claypot-multirice
 layout: posts
 toc: true
 toc_label: "On this page"
 header:
   teaser: /assets/images/claypot-multirice/teaser.jpg
+excerpt: "excerpt test for Multigrain rice"
 sidebar:
   nav: "claypot_en"
 tag:

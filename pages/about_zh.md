@@ -1,7 +1,9 @@
 ---
 layout: single
-title: "关于本站 ABOUT"
-permalink: /about/
+title: "关于本站"
+lingual: zh
+ref_id: about
+permalink: /about_zh
 toc: false
 ---
 
@@ -16,6 +18,7 @@ toc: false
 让我们带着好奇心，感受在厨房探索和创造的乐趣吧！
 
 Hi! This is GTXB's cooking blog!
+I worked as a cook in a fine-dinning restaurant
 
 微信公众号  
 ![欢迎关注微信公众号](/assets/images/about/gzh_qrcode.jpg)

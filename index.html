@@ -1,64 +1,70 @@
 ---
 layout: splash
 title: "钢铁小包"
+lingual: zh
+ref_id: home
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/header_image.jpg
   caption: "**GTXB**"
 excerpt: "A cook, 一个做饭的人"
-rpost:
+recent_posts:
   - excerpt: "最新发布"
 # 3 recent posts
-feature_row:
-  - image_path: /assets/images/pasta-puttanesca/teaser.jpg
-    title: "茄汁咸菜拌面 Pasta Puttanesca"
-    url: "/2025/10/28/pasta-puttanesca-cn"
-    excerpt: "浓郁番茄味，搭配鳀鱼，刺山柑和黑橄榄，清空壁橱的好帮手！"
-  - image_path: /assets/images/cp-mixednuts-mooncake/teaser.jpg
-    title: "果仁月饼"
-    url: "/2025/10/08/cp-mixednuts-mooncake-cn"
-    excerpt: "柔软广式饼皮，搭配松脆坚果內馅，小小一个，作茶点也刚好"
-  - image_path: /assets/images/lacto-ferment-ylbeans-recipe1/teaser.JPG
-    title: "酸豆角拌粉"
-    url: "/2025/08/08/lacto-ferment-ylbeans-recipe1-cn"
-    excerpt: "肉末酸豆角，清爽酸味酱汁，辛辣柔和的仔姜，搭配爽滑米粉，即便是苦夏，也能嘬掉一整盘！"
-# collections
-clist:
-  - excerpt: "合辑"
-feature_row1:
+topics:
+  - excerpt: "烹饪主题"
+topics_row:
   - image_path: /assets/images/claypot-sausage-rice/teaser.jpg
-    title: "煲仔饭合辑"
+    title: "煲仔饭"
     url: "/2025/05/30/claypot-claypot-rice-cn"
     excerpt: "先练习煮一锅白饭，之后，只需一口小砂锅，就可以变化出多种口味"
-feature_row2:
   - image_path: /assets/images/lacto-basics/teaser.jpg
-    title: "乳酸发酵合辑"
+    title: "乳酸发酵"
     url: "/2025/08/06/lacto-basics-cn"
     excerpt: "蔬菜加盐水，看不见的乳酸菌其实一直在我们周围"
-feature_row3:
   - image_path: /assets/images/cp-fold-dumpling1/teaser.jpg
-    title: "中式面点合辑"
+    title: "中式面点"
     url: "/2024/07/16/cp-fold-dumpling1-cn"
     excerpt: "把面粉或米粉，变成好吃的！"
 ---
 <!-- type center/left/right -->
-<!-- {% include feature_row id="intro" type="center" %} -->
-<!-- recent posts list -->
-{% include feature_row id="rpost" type="center" %}
 
-{% include feature_row %}
+{% include feature_row id="recent_posts" type="center" %}
 
-<!-- collection list -->
-{% include feature_row id="clist" type="center" %}
+{% assign lingual_posts = site.posts | where: "lingual", page.lingual %}
+<div class="feature__wrapper">
+  {% for p in lingual_posts limit:3 %}
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if p.header.teaser %}
+          <div class="archive__item-teaser">
+            <img src="{{ p.header.teaser | relative_url }}"
+                 alt="{% if p.alt %}{{ p.alt }}{% endif %}">
+            {% if p.image_caption %}
+              <span class="archive__item-caption">{{ p.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
 
-{% include feature_row id="feature_row1" type="center" %}
+        <div class="archive__item-body">
+          {% if p.title %}
+          <!-- 底部的read more换成链接加在title上 -->
+          <a href="{{ p.url | relative_url }}">
+              <h2 class="archive__item-title">{{ p.title }}</h2>
+          </a>
+          {% endif %}
 
-{% include feature_row id="feature_row2" type="center" %}
+          {% if p.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ p.excerpt | markdownify }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
-{% include feature_row id="feature_row3" type="center" %}
-
-<!-- ---
-layout: home
-author_profile: true
---- -->
+{% include feature_row id="topics" type="center" %}
+{% include feature_row id="topics_row" %}

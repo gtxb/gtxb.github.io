@@ -24,6 +24,10 @@
         </a> -->
 
         <ul class="visible-links">
+          <!-- 切换中英文 -->
+          <a {% if lingual == 'zh' %} class="highlight_lingual" {% endif %} href="{{ zh_url | relative_url }}">中文</a>
+          <a {% if lingual == 'en' %} class="highlight_lingual" {% endif %} href="{{ en_url | relative_url }}">EN</a>
+
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>

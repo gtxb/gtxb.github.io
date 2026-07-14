@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "中文"
-    url: /
-  - title: "EN"
-    url: /en_pages/
   - title: "ABOUT"
-    url: /about/
+    url: /about_en/
+  # - title: "中文"
+  #   url: /
+  # - title: "EN"
+  #   url: /en_pages/
 
 # sidebar与cn_pages内folders structure相同
 #chinese_pastry
@@ -14,16 +14,13 @@ cp_cn:
     children:
       - title: "挤饺子"
         url: /2024/07/16/cp-fold-dumpling1-cn
-      - title: "果仁月饼"
-        url: /2025/10/08/cp-mixednuts-mooncake-cn
 
 cp_en:
   - title: Chinese Pastry
     children:
       - title: "Fold a Dumpling"
         url: /2024/07/16/cp-fold-dumpling1-en
-      - title: "Mixed Nuts Mooncakes"
-        url: /2025/10/08/cp-mixednuts-mooncake-en
+
 # claypot
 claypot_cn:
   - title: 煲仔饭基础
@@ -60,41 +57,3 @@ claypot_en:
     children:
       - title: "Chinese-Sausage Claypot rice"
         url: /2025/06/29/claypot-sausage-rice-en
-
-# lacto fermenttion
-lacto_cn:
-  - title: 乳酸发酵基础
-    children:
-      - title: "发酵蔬菜基础"
-        url: /2025/08/06/lacto-basics-cn
-  - title: 发酵蔬菜食谱及应用
-    children:
-      - title: "发酵酸豆角"
-        url: /2025/08/07/lacto-ferment-ylbeans-cn
-      - title: "酸豆角拌粉"
-        url: /2025/08/08/lacto-ferment-ylbeans-recipe1-cn
-
-lacto_en:
-  - title: Lacto-Fermentation 101
-    children:
-      - title: "Fermenting Vegetables 101"
-        url: /2025/08/06/lacto-basics-en
-  - title: Recipes
-    children:
-      - title: "Fermenting Yard-Long Beans"
-        url: /2025/08/07/lacto-ferment-ylbeans-en
-      - title: "Rice Noodle bowl with stir-fried fermented yard-long beans"
-        url: /2025/08/08/lacto-ferment-ylbeans-recipe1-en
-
-# pasta
-pasta_cn:
-  - title: 意面食谱
-    children:
-      - title: "茄汁咸菜拌面"
-        url: /2025/10/28/pasta-puttanesca-cn
-
-pasta_en:
-  - title: Pasta Recipes
-    children:
-      - title: "Pasta Puttanesca"
-        url: /2025/10/28/pasta-puttanesca-en

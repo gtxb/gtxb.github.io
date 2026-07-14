@@ -1,13 +1,21 @@
 ---
 title: "挤饺子的手法"
 canonical_url: "http://gtxb.github.io/custom-canonical_url"
+lingual: zh
+ref_id: cp-fold-dumpling
 header:
   teaser: /assets/images/cp-fold-dumpling1/teaser.jpg
+excerpt: "要领是“帮饺子伸懒腰”"
 sidebar:
   nav: "cp_cn"
-tag:
+categories:
   - 中式面点
+tags:
+  - 面食
+  - 冷水面
+  - 饺子
 ---
+
 ![精神抖擞的饺子](/assets/images/cp-fold-dumpling1/teaser.jpg)
 
 

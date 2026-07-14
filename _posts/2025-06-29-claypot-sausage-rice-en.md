@@ -1,10 +1,13 @@
 ---
 title: "Chinese sausage claypot rice"
+lingual: en
+ref_id: claypot-sausage-rice
 toc: true
 toc_label: "On this page"
 toc_sticky: true
 header:
   teaser: /assets/images/claypot-sausage-rice/teaser.jpg
+excerpt: "excerpt test for Chinese sausage claypot rice"
 sidebar:
   nav: "claypot_en"
 tag:

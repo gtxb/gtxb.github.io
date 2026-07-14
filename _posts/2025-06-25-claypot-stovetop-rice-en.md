@@ -1,9 +1,12 @@
 ---
 title: "Claypot rice, what if the stovetop is too powerful..."
+lingual: en
+ref_id: claypot-stovetop-rice
 toc: true
 toc_label: "On this page"
 header:
   teaser: /assets/images/claypot-stovetop-rice/teaser.jpg
+excerpt: "excerpt test for Claypot rice, what if the stovetop is too powerful..."
 sidebar:
   nav: "claypot_en"
 tag:

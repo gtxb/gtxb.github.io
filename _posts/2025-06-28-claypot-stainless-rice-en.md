@@ -1,10 +1,13 @@
 ---
 title: "Cooking claypot rice using a stainless steel pot"
+lingual: en
+ref_id: claypot-stainless-rice
 toc: true
 toc_label: "On this page"
 toc_sticky: true
 header:
   teaser: /assets/images/claypot-stainless-rice/teaser.jpg
+excerpt: "excerpt test for Cooking claypot rice using a stainless steel pot"
 sidebar:
   nav: "claypot_en"
 tag:

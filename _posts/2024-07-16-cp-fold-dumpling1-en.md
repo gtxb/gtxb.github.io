@@ -1,73 +1,49 @@
----
-title: "One Way to Fold a Chinese Dumpling"
+gem---
+title: "Fold a Chinese Dumpling"
 canonical_url: "http://gtxb.github.io/custom-canonical_url"
+lingual: en
+ref_id: cp-fold-dumpling
 header:
   teaser: /assets/images/cp-fold-dumpling1/20240716_1.jpg
+excerpt: "Excerpt test for Fold a Chinese Dumpling"
 sidebar:
   nav: "cp_en"
 tag:
   - Chinese-dumpling
 ---
-(待完善)
+
+
 
 ![精神抖擞的饺子](/assets/images/cp-fold-dumpling1/teaser.jpg)
 
+There are many ways to fold Chinese dumplings(jiaozi,饺子), I had learned one of them from my parents, we had made them together during Spring Festival since I was a child: after placing the filling, fold the wrapper in half, gather the two corners towards the sealed center and create some pleats, it's a traditional crescent-shaped dumpling.
 
-包饺子的手法有很多种，我只会一种：对折，捏起中间，左右两端的皮向中间推，再分1~2次捏起。不仅有褶子，饺子也像个月牙立在桌上。最家常的手法，自然是儿时父母包饺子时，在一旁边做边学的。
+When I worked as a restaurant cook, the dumpling was offered as a special menu item for Spring Festival once, the department where I worked was responsible for making dumplings. The folding method was sealing the edge with thumbs and index finger, it was efficient because the shaping was finished in only one step. It was different from the one that I'd known and it was not difficult to seal a dumpling in this method, but the dumpling that I made was not as pretty as the ones made by other cooks, so I was only in charge of making the dumpling wrapper.
 
+The aha-moment occured when I made dumplings in home by myself, although I still cannot well understand this method even the menu was changed.
 
-但在餐厅工作时，菜单上曾有过水饺，饺子是手工挤出来的，不能如家常般任意形状，看起来并不难，偏偏我挤得总是差点意思。到底差在哪里，即便请教了也没明白。客人多，时间上不容许我慢慢理解，那我就擀面皮和打下手吧。这又是时令菜品，没上几日便撤下了，之后忙于其他工作，没机会再琢磨挤饺子的手法。
+The key point is placing two hands in a straight line when folding the dumpling.
 
-
-不过还是惦记着：我的手法到底哪里不好？
-
-
-后来在家包给自己吃，想起这个“未解之谜”。这次不赶时间，可劲儿琢磨！
-
-
-还好没挤几个就领悟了 —— **“帮饺子伸懒腰”**。
-
-
-之前挤得饺子，外观上不饱满，边缘的皮向前耷拉着，重心不稳的样子。
-
-![改进前 没睡醒的样子](/assets/images/2024-07-16-dumpling/20240716_2.jpg "没睡醒的饺子")
-
-
-改进后挺拔了不少，侧面看也前后对称。
-
-![改进后 精神抖擞的饺子](/assets/images/2024-07-16-dumpling/20240716_3.jpg "改进后 精神抖擞的饺子")
-
-
-改进前后手法的差异，用纸片做演示的话，
+I use a round paper as a dumpling wrapper to show the difference, the edge is highlighted in black.
 
 ![演示用纸](/assets/images/2024-07-16-dumpling/20240716_4.jpg "演示用纸")
 
-
-用虎口捏住皮挤的时候，两个拇指指甲相对。
+When two thumbs at an angle of 90°, the wrapper edge is in a U shape and the dumpling looks like this:
 
 ![改进前手法 正面](/assets/images/2024-07-16-dumpling/20240716_5.jpg "改进前手法 正面")
 
-
-换个视角，饺子皮上边缘被弯成了U形。
-
 ![改进前手法 俯视](/assets/images/2024-07-16-dumpling/20240716_6.jpg "改进前手法 俯视")
 
+![改进前 没睡醒的样子](/assets/images/2024-07-16-dumpling/20240716_2.jpg "没睡醒的饺子")
 
-改进后，两个拇指指甲是平行的。
-
+When placing two hands in a straight line, the angle between two thumbs is 180°, the wrapper edge is also a straight line, the dumpling looks symmetry and well-filled.
 ![改进后手法 正面](/assets/images/2024-07-16-dumpling/20240716_7.jpg "改进后手法 正面")
-
-
-饺子皮上边缘是直的，就像帮它伸懒腰一样。
 
 ![改进后手法 俯视](/assets/images/2024-07-16-dumpling/20240716_8.jpg "改进后手法 俯视")
 
+![改进后 精神抖擞的饺子](/assets/images/2024-07-16-dumpling/20240716_3.jpg "改进后 精神抖擞的饺子")
 
-获得Aha moment的喜悦，就像这个挤好的饺子。
-
+The Aha moment excited me a lot, but in fact, the shape isn't the most important thing for homemade dumplings, so please enjoy the moment when making dumplings with families!
 ![伸个懒腰容光焕发](/assets/images/2024-07-16-dumpling/20240716_9.jpg "伸个懒腰容光焕发")
-
-
-不过，晚餐吃上一盘没睡醒的饺子，或许还能安眠呢~
 
 ![安眠饺子](/assets/images/2024-07-16-dumpling/20240716_10.jpg "安眠饺子")
