@@ -31,3 +31,7 @@ group :jekyll_plugins do
 end
 
 gem "logger", "~> 1.7"
+
+gem "ostruct", "~> 0.6.3"
+
+gem "bigdecimal", "~> 4.1"
