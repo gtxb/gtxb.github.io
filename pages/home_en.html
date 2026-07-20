@@ -9,54 +9,35 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/header_image.jpg
   caption: "**GTXB**"
-excerpt: "A cook, 一个做饭的人"
-rpost:
+excerpt: "A cook"
+recent_posts:
   - excerpt: "RECENT POSTS"
-# 3 recent posts
-feature_row:
-  - image_path: /assets/images/pasta-puttanesca/teaser.jpg
-    title: "Pasta Puttanesca"
-    url: "/2025/10/28/pasta-puttanesca-en"
-    excerpt: "Cooking Pasta Puttanesca when…cleaning the pantry!"
-  - image_path: /assets/images/cp-mixednuts-mooncake/teaser.jpg
-    title: "Mixed Nuts Mooncake "
-    url: "/2025/10/08/cp-mixednuts-mooncake-en"
-    excerpt: "Cantonese mixed nuts mooncakes are characterised by their thin chewy crust and crunchy nutty filling, the traditional pastry goes well with black tea."
-  - image_path: /assets/images/lacto-ferment-ylbeans-recipe1/teaser.jpg
-    title: "Rice noodle bowl, garnished with stir-fried fermented yard-long bean"
-    url: "/2025/08/08/lacto-ferment-ylbeans-recipe1-en"
-    excerpt: "Fermented yard-long beans have a wide use in Chinese cooking, this is my favorite flavoring combination."
-# collections
-clist:
+topics:
   - excerpt: "COLLECTIONS"
-feature_row1:
+topics_row:
   - image_path: /assets/images/claypot-sausage-rice/teaser.jpg
     title: "CLAYPOT RICE"
     url: "/2025/05/30/claypot-claypot-rice-en"
     excerpt: "The basic claypot white rice and its variations"
-feature_row2:
   - image_path: /assets/images/lacto-basics/teaser.jpg
     title: "LACTO-FERMENTATION"
     url: "/2025/08/06/lacto-basics-en"
     excerpt: "Lacto-fermentation brings new flavors and texture to ingredients, it requires patience as it’s slower but its final product is worth waiting."
-feature_row3:
   - image_path: /assets/images/cp-fold-dumpling1/teaser.jpg
     title: "CHIENESE PASTRY COLLECTION"
     url: "/2024/07/16/cp-fold-dumpling1-en"
     excerpt: "Flour + Water, and then, the magic happens"
 ---
 <!-- type center/left/right -->
-<!-- {% include feature_row id="intro" type="center" %} -->
-<!-- recent posts list -->
-{% include feature_row id="rpost" type="center" %}
 
-{% include feature_row %}
+{% include feature_row id="recent_posts" type="center" %}
 
-<!-- collection list -->
-{% include feature_row id="clist" type="center" %}
+{% assign lingual_posts = site.posts | where: "lingual", page.lingual %}
+<div class="feature__wrapper">
+  {% for p in lingual_posts limit:3 %}
+    {% include card image_path=p.header.teaser title=p.title url=p.url excerpt=p.excerpt %}
+  {% endfor %}
+</div>
 
-{% include feature_row id="feature_row1" type="center" %}
-
-{% include feature_row id="feature_row2" type="center" %}
-
-{% include feature_row id="feature_row3" type="center" %}
+{% include feature_row id="topics" type="center" %}
+{% include feature_row id="topics_row" %}
