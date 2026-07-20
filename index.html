@@ -34,37 +34,7 @@ topics_row:
 {% assign lingual_posts = site.posts | where: "lingual", page.lingual %}
 <div class="feature__wrapper">
   {% for p in lingual_posts limit:3 %}
-  <div class="feature__item">
-    <div class="archive__item">
-      {% if p.header.teaser %}
-        <div class="archive__item-teaser">
-          <img src="{{ p.header.teaser | relative_url }}"
-               alt="{% if alt %}{{ alt }}{% endif %}">
-          {% if image_caption %}
-            <span class="archive__item-caption">{{ image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
-          {% endif %}
-        </div>
-      {% endif %}
-      
-      <div class="archive__item-body">
-        {% if p.title %}
-        <a href="{{ p.url | relative_url }}">
-            <h2 class="archive__item-title">{{ p.title }}</h2>
-        </a>
-        {% endif %}
-        {% if p.excerpt %}
-          <div class="archive__item-excerpt">
-            {{ p.excerpt | markdownify }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>  
-  <!-- {% include card 
-        image_path=p.header.teaser
-        title=p.title 
-        url=p.url 
-        excerpt=p.excerpt %} -->
+    {% include card image_path=p.header.teaser title=p.title url=p.url excerpt=p.excerpt %}
   {% endfor %}
 </div>
 
